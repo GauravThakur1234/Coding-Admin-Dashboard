@@ -7,6 +7,7 @@ import GitHub from "./GitHubPage";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import { useTheme } from "./hooks/useTheme";
+import AnaliticalPage from "./AnaliticalPage";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState("dashboard");
@@ -39,7 +40,7 @@ export default function Home() {
       case "projects":
         return <Projects />;
       case "analytics":
-        return <CommingSoonPage title="Analytics Dashboard" />;
+        return <AnaliticalPage title="Analytics Dashboard" />;
       case "repositories":
         return <GitHub />;
       case "settings":
